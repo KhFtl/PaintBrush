@@ -348,6 +348,7 @@
             this.btn_save.TabIndex = 1;
             this.btn_save.Text = "Зберегти";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // btn_load
             // 
@@ -359,6 +360,7 @@
             this.btn_load.TabIndex = 0;
             this.btn_load.Text = "Завантажити";
             this.btn_load.UseVisualStyleBackColor = true;
+            this.btn_load.Click += new System.EventHandler(this.btn_load_Click);
             // 
             // btn_erase
             // 
@@ -382,6 +384,9 @@
             this.pictureBox1.Size = new System.Drawing.Size(1201, 733);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
             // label2
             // 
