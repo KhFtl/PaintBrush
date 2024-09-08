@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace PaintBrush
 {
+    //Клас для роботи з двома точками для малювання
     public class ArrayPoints
     {
         private int index = 0;

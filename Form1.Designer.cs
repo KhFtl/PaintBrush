@@ -56,6 +56,7 @@
             this.btn_load = new System.Windows.Forms.Button();
             this.btn_erase = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -82,6 +83,7 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.panel1);
             this.groupBox2.Controls.Add(this.btn_palitra);
             this.groupBox2.Controls.Add(this.btn_clear);
@@ -143,6 +145,7 @@
             this.button1.Size = new System.Drawing.Size(57, 34);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -153,6 +156,7 @@
             this.button2.Size = new System.Drawing.Size(57, 34);
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -162,6 +166,7 @@
             this.button3.Size = new System.Drawing.Size(57, 34);
             this.button3.TabIndex = 0;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -171,6 +176,7 @@
             this.button4.Size = new System.Drawing.Size(57, 34);
             this.button4.TabIndex = 0;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -180,6 +186,7 @@
             this.button5.Size = new System.Drawing.Size(57, 34);
             this.button5.TabIndex = 0;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button1_Click);
             // 
             // button6
             // 
@@ -189,6 +196,7 @@
             this.button6.Size = new System.Drawing.Size(57, 34);
             this.button6.TabIndex = 0;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button1_Click);
             // 
             // button7
             // 
@@ -198,6 +206,7 @@
             this.button7.Size = new System.Drawing.Size(57, 34);
             this.button7.TabIndex = 0;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button1_Click);
             // 
             // button8
             // 
@@ -207,6 +216,7 @@
             this.button8.Size = new System.Drawing.Size(57, 34);
             this.button8.TabIndex = 0;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button1_Click);
             // 
             // button9
             // 
@@ -216,6 +226,7 @@
             this.button9.Size = new System.Drawing.Size(57, 34);
             this.button9.TabIndex = 0;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button1_Click);
             // 
             // button10
             // 
@@ -225,6 +236,7 @@
             this.button10.Size = new System.Drawing.Size(57, 34);
             this.button10.TabIndex = 0;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button1_Click);
             // 
             // button11
             // 
@@ -234,6 +246,7 @@
             this.button11.Size = new System.Drawing.Size(57, 34);
             this.button11.TabIndex = 0;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button1_Click);
             // 
             // button12
             // 
@@ -243,6 +256,7 @@
             this.button12.Size = new System.Drawing.Size(57, 34);
             this.button12.TabIndex = 0;
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button1_Click);
             // 
             // button13
             // 
@@ -252,6 +266,7 @@
             this.button13.Size = new System.Drawing.Size(57, 34);
             this.button13.TabIndex = 0;
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button1_Click);
             // 
             // button14
             // 
@@ -261,6 +276,7 @@
             this.button14.Size = new System.Drawing.Size(57, 34);
             this.button14.TabIndex = 0;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button1_Click);
             // 
             // button15
             // 
@@ -270,31 +286,34 @@
             this.button15.Size = new System.Drawing.Size(57, 34);
             this.button15.TabIndex = 0;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_clear
             // 
             this.btn_clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_clear.Location = new System.Drawing.Point(69, 283);
+            this.btn_clear.Location = new System.Drawing.Point(71, 332);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(183, 39);
             this.btn_clear.TabIndex = 2;
             this.btn_clear.Text = "Очистити";
             this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_palitra
             // 
             this.btn_palitra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_palitra.Location = new System.Drawing.Point(69, 328);
+            this.btn_palitra.Location = new System.Drawing.Point(71, 377);
             this.btn_palitra.Name = "btn_palitra";
             this.btn_palitra.Size = new System.Drawing.Size(183, 39);
             this.btn_palitra.TabIndex = 2;
             this.btn_palitra.Text = "Палітра";
             this.btn_palitra.UseVisualStyleBackColor = false;
+            this.btn_palitra.Click += new System.EventHandler(this.btn_palitra_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(6, 148);
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(6, 185);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(309, 34);
             this.panel1.TabIndex = 3;
@@ -313,7 +332,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(148, 87);
+            this.label1.Location = new System.Drawing.Point(150, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 24);
             this.label1.TabIndex = 1;
@@ -346,21 +365,32 @@
             this.btn_erase.BackColor = System.Drawing.Color.Silver;
             this.btn_erase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_erase.Image = global::PaintBrush.Properties.Resources.eraser;
-            this.btn_erase.Location = new System.Drawing.Point(98, 204);
+            this.btn_erase.Location = new System.Drawing.Point(100, 253);
             this.btn_erase.Name = "btn_erase";
             this.btn_erase.Size = new System.Drawing.Size(124, 73);
             this.btn_erase.TabIndex = 1;
             this.btn_erase.UseVisualStyleBackColor = false;
+            this.btn_erase.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Cross;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(3, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1201, 733);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 149);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(250, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Поточний колір кісточки";
             // 
             // Form1
             // 
@@ -376,6 +406,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -415,6 +446,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_load;
         private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Label label2;
     }
 }
 
